@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>
+        Forgot password
+    </title>
+    <script type="text/javascript" src="radiffFPwd.js"></script>
+    <link rel="stylesheet" type="text/css" href="radiffCss.css">
+</head>
+
+<body>
+    <center>
+        <div style="height: max-content; width: max-content; padding-top: 20px; ">
+            <span style="font-size: x-large;"><b>Forgot your password?</b></span>
+            <br><br><br>
+            <table  style="border-style: groove; border-radius: 0px;  " border="1" cellspacing="10px">
+                <tr height="50px" width="100px"> 
+                    <td class="colStyle" id="one"><b>1. Enter your email address</b></td>
+                    <td id="two">2. Confirm it's you.</td>
+                    <td id=three>3.Get your new password</td>
+                </tr>
+            </table>
+            <br><br><br>
+
+            <div id="enterEmailDiv">
+                My email ID is &emsp;&emsp;: &emsp;<input type="text" id="fpUname"> &emsp; @radiff.com
+                <br><br><br>
+                
+            </div>
+            <div align="left" id="cnfrmYouDiv" hidden>
+                <b>Here we can help you to retrieve your password for : </b><br>
+                <b><span id="getEmail"></span></b>
+                <br><br>
+                <input type="radio" id="altEmail" name="altEmail" onclick="radioClick()">We can send you password reset instructions to your alternate email ID<br>
+                <b>j***********i@gmail.com</b>
+            </div>
+            <div id="newPwdDiv" hidden>
+                
+                <p id="otpSpace">
+                <b>We sent OTP to Your Email address.</b><br><br>
+                Enter OTP : <input type="text" id="otp">&emsp;<button onclick="varifyOtp()">Varify</button><br><br></p>
+                <p id="newPwd" hidden>
+                <b>Set your new password.</b><br><br>
+
+                New Password &emsp;&emsp;: <input type="text" id="pwd" onblur="pwdValidation()"><br><br>
+                Confirm password&emsp; : <input type="text" id="cnfrmPwd">
+                </p>
+            </div>
+            <br><button onclick="checkValidation()" >NEXT></button>
+            <br>
+            <hr>
+            <span style="font-size: small;"><b>© 2020 Rediff.com India Limited. All rights reserved.</b></span>
+        </div>
+        
+        
+    </center>
+</body>
+
+</html>

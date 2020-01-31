@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Facbook Registration</title>
+    <script type="text/javascript" src="facebook.js"></script>
+</head>
+
+<body align="center">
+    <table align="center" cellspacing="10px">
+        <tr>
+            <td colspan="2">
+                <h1>Create an account</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>It's quick and easy</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="fnameDiv" name="fnameDiv" height="50px" width="100px" align="center"
+                    style="height: 25px; width: 200px; border-color: initial; padding-top: 10px;  border-style: groove; border-style: ridge;">
+
+                    <input type="text" id="fName" placeholder="First Name"
+                        onblur="fnameValidation('fName','fnameDiv','errorMarkf')"
+                        onfocus="fnameFocus('fName','fnameDiv','errorMarkf')" style="border-style: none; "><span
+                        id="errorMarkf" style="color: red;" hidden>!</span>
+
+                </div>
+            </td>
+
+            <td>
+                <div id="lnameDiv" height="50px" width="100px" align="center"
+                    style="height: 25px; width: 200px; border-color: initial; padding-top: 10px;  border-style: groove; border-style: ridge;">
+                    <input type="text" id="lName" placeholder="Last Name"
+                        onblur="fnameValidation('lName','lnameDiv','errorMarkl')"
+                        onfocus="fnameFocus('lName','lnameDiv','errorMarkl')" style="border-style: none;"><span
+                        id="errorMarkl" style="color: red;" hidden>!</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="emailDiv" height="50px" width="100px" align="center"
+                    style="height: 25px; width: 400px; border-color: initial; padding-top: 10px;  border-style: groove; border-style: ridge;">
+                    <input type="text" id="email" placeholder="Mobile Number or Email Address" size="46"
+                        onblur="fnameValidation('email','emailDiv','errorMarkEm')" style="border-style: none;"
+                        onfocus="fnameFocus('email','emailDiv','errorMarkEm')"><span id="errorMarkEm"
+                        style="color: red;" hidden>!</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="pwdDiv" height="50px" width="100px" align="center"
+                    style="height: 25px; width: 400px; border-color: initial; padding-top: 10px;  border-style: groove; border-style: ridge;">
+                    <input type="password" id="pwd" placeholder="New Password" size="46"
+                        onblur="fnameValidation('pwd','pwdDiv','errorMarkPw')"
+                        onfocus="fnameFocus('pwd','pwdDiv','errorMarkPw')" style="border-style: none;"><span
+                        id="errorMarkPw" style="color: red;" hidden>!</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Birthday<br><input type="date" id="birthday">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Gender<br><input type="radio" id="gen" name="gen"> Male <input type="radio" id="gen" name="gen"> Female
+                <input type="radio" id="gen" name="gen"> Custom
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                By clicking Sign Up, you agree to our Terms, Data Policy and<br>Cookie Policy. You may receive SMS
+                notifications from us and<br>can opt out at any time.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="checkValidation()">
+                    <h2>Sign Up</h2>
+                </button>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+    </table>
+</body>
+
+</html>

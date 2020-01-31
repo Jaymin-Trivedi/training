@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <title>
+        Radiff Registration
+    </title>
+    <script type="text/javascript" src="radiffmail.js"></script>
+</head>
+
+<body>
+
+    <h1 align="center">rediff.com</h1>
+    <hr>
+    <h2 align="center">Create a rediffmail account</h2><br>
+    <table cellspacing="10px" align="center">
+        <tr>
+            <td width="200px">
+                Full Name
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" id="uName" onkeyup="emptyText()" >
+            </td>
+            <td>Enter Your first name and last name </td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Choose Radiffmail Id
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" id="radiffId" onkeyup="idValidation()">
+            </td>
+            <td>@radiffmail.com</td>
+        </tr>
+        <tr>
+            <td width="200px">
+
+            </td>
+            <td> </td>
+            <td> <button>Check availability</button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Password
+            </td>
+            <td>:</td>
+            <td>
+                <input type="password" id="pwd" onblur="pwdValidation()">
+            </td>
+            <td rowspan="2">
+                <h6>
+                    <ul>
+                        Password:
+                        <li>must contain 6-12 characters</li>
+                        <li>must contain both upper and lower case characters</li>
+                        <li>must contain numeric characters</li>
+                        <li>must contain special characters</li>
+                        <li> should not contain username or firstname or lastname</li>
+                    </ul>
+                </h6>
+
+            </td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Confirm Password
+            </td>
+            <td>:</td>
+            <td>
+                <input type="password" id="cnfrmPwd" onblur="emptyText()">
+            </td>
+        </tr>
+        <tr id="altEmailRow">
+            <td width="200px">
+                Alternate Email Address
+            </td>
+            <td>:</td>
+            <td>
+                <input type="email" id="altEmail" onblur="emptyText()">
+            </td>
+            <td>we will send password to this email </td>
+        </tr>
+        <tr>
+            <td width="200px">
+
+            </td>
+            <td> </td>
+            <td colspan="2"> <input type="checkbox" onclick="noEmail()"> Click if you dont have alternative email </td>
+        </tr>
+
+        <tr id="securityQueRow" hidden>
+            <td width="200px">
+                Select security question
+            </td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option>select the question from list</option>
+                    <option>abcd?</option>
+                    <option>efgh?</option>
+                    <option>ijkl?</option>
+
+                </select>
+            </td>
+            <td> </td>
+        </tr>
+        <tr id="securityAnsRow" hidden>
+            <td width="200px">
+                Enter your answer
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" id="secAns">
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Mobile No.
+            </td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option>+91 </option>
+                    <option>+92 </option>
+                    <option>+93 </option>
+                    <option>+94 </option>
+
+                </select>
+                <input type="text" id="mobileNum" maxlength="10" onkeypress="mobileValidation()">
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Date of Birth
+            </td>
+            <td>:</td>
+            <td>
+                <input type="date">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="200px">
+                Gender
+            </td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="gen"> Male <input type="radio" name="gen"> Female
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="200px">
+                country
+            </td>
+            <td>:</td>
+            <td>
+                <select onchange="selectCity()" id="country">
+                    <option>India </option>
+                    <option>USA </option>
+                    <option>China </option>
+                    <option>Iran </option>
+
+                </select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="200px">
+                City
+            </td>
+            <td>:</td>
+            <td>
+                <select id="city">
+
+
+                </select>
+            </td>
+            <td></td>
+        </tr>
+
+
+
+
+        <tr>
+            <td width="200px">
+
+            </td>
+            <td> </td>
+            <td> <button onclick="checkValidation()">Create account</button></td>
+            <td></td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
